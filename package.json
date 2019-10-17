@@ -1,0 +1,31 @@
+{
+  "name": "color_zebra",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && parcel build ./index.html --public-url /color_zebra",
+    "deploy": "gh-pages -d dist",
+    "start": "parcel ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MihailPasjuta/color_zebra.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MihailPasjuta/color_zebra/issues"
+  },
+  "homepage": "https://github.com/MihailPasjuta/color_zebra#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.5.1",
+    "parcel": "^1.12.4",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
