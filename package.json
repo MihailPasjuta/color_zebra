@@ -21,6 +21,7 @@
   "homepage": "https://github.com/MihailPasjuta/color_zebra#readme",
   "dependencies": {
     "@material-ui/core": "^4.5.1",
+    "@material-ui/icons": "^4.5.1",
     "css": "^2.2.4",
     "parcel": "^1.12.4",
     "prop-types": "^15.7.2",

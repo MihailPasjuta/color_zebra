@@ -8,7 +8,6 @@ import PhotoGallery from './photogallery';
 		render(){
 			return(
 				<PhotoGallery/>
-			
 			)
 		}
 	}

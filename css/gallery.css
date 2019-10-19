@@ -1,4 +1,4 @@
-.head_menu_block{
+	.head_menu_block{
 		position: relative;
 		z-index:5;
 		top:2vw;
@@ -93,14 +93,7 @@
 	.galleryBlock{
 		position:relative;
 		margin-top:3vw;
-		width:95%;
+		width:97%;
 		margin-left:2vw;
 		overflow-x:hidden;
-	}
-	.galleryBlock_head{
-		position:relative;
-		margin-top:0vw;
-		width:75vw;
-		height:3.7vw;
-		z-index:4;
 	}

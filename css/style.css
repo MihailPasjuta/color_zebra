@@ -103,17 +103,3 @@
 	.social_logo{
 		width:4vw;
 	}
-		.galleryBlock{
-		position:relative;
-		margin-top:3vw;
-		width:95%;
-		margin-left:2vw;
-		overflow-x:hidden;
-	}
-	.galleryBlock_head{
-		position:relative;
-		margin-top:0vw;
-		width:75vw;
-		height:3.7vw;
-		z-index:4;
-	}
