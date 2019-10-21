@@ -9,7 +9,9 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import styles from "./css/gallery.css"
+import styles from "./css/gallery.css";
+import Grid from '@material-ui/core/Grid';
+import Popper from '@material-ui/core/Popper';
 
 const IMAGES =
 	[
@@ -171,6 +173,12 @@ const IMAGES =
 		}
 	
 	]
+	
+const useStyles_grid = makeStyles(theme => ({
+  root_grid: {
+    flexGrow: 2,
+  }
+}));
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -192,7 +200,7 @@ function TabPanel(props) {
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired
 };
 
 function a11yProps(index) {
@@ -201,6 +209,7 @@ function a11yProps(index) {
     'aria-controls': `scrollable-auto-tabpanel-${index}`,
   };
 }
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -211,39 +220,25 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function PhotoGallery() {
-  const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+	const classes_grid = useStyles_grid();
+	const classes = useStyles();
+	const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = event => {
+    setAnchorEl(anchorEl ? null : event.currentTarget);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popper' : undefined;
 
   return (
 	<div className="formPhoto">
-					<div className="head_menu_block">
-						<div className="logos">
-							<img src={Logo} className="logos"/>
-						</div>
-						<div className="menu">
-							<nav className="menu_nav" role="navigation">
-							  <ul className="menu_ul">
-								<li className="menu_li"><a className="menu_link" href="index.html">Про нас</a></li>
-								<li className="menu_li"><a className="menu_link" href="#">Педагоги</a></li>
-								<li className="menu_li"><a className="menu_link" href="#">Навчання</a></li>
-								<li className="menu_li"><a className="menu_link" href="#">Фотогалерея</a></li>
-								<li className="menu_li"><a className="menu_link" href="#">Контакти</a></li>
-							  </ul>
-							</nav>
-						</div>
-						<div className="social">
-							<div className="social_logo_div">
-								<a target="_blank" href="https://www.facebook.com/kolorovazebra.fastiv/">
-									<img className="social_logo" src={Facebook}/>
-								</a>
-							</div>
-						</div>
-					</div>
-  
 				<div className="galleryBlock">
 					<div className={classes.root}>
 					  <AppBar position="static" color="default">
@@ -272,6 +267,22 @@ export default function PhotoGallery() {
 					  </TabPanel>
 					</div>
 				</div>
+				<div className="gallery_item">ВІДЕО</div>
+				
+					<div className={classes.root}>
+						<Grid container spacing={3}>
+							<Grid item xs={2}>
+							  <div aria-describedby={id} onClick={handleClick}>
+								<img src="https://li1.rightinthebox.com/images/50x50/201812/aardar1545709115855.jpg"/>
+							  </div>
+							  <Popper id={id} open={open} anchorEl={anchorEl}>
+								<iframe width="500" height="280" src="https://www.youtube.com/embed/ptTM4o1O1v0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							  </Popper>
+							</Grid>
+						</Grid>
+					</div>
+				
+				
 	</div>
   );
 }
