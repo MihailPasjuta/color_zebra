@@ -9,19 +9,25 @@
 		left: 16vw;
 		height:8vw;
 	}
-	.logos{
-		height:100%;
+	.head_menu_block_img{
+		position: relative;
+		z-index:5;
+		background-image: url(\images/zebra_head.png);
+		background-size: 79vw 26vw;
+		width:80%;
+		height:26vw;
+		left:11vw;
 	}
 	.menu{
 		position: relative;
 		z-index:5;
-		width:75%;
-		left: 12%;
+		width:150vw;
+		left: -5vw;
 		height:8vw;
-		margin-top:-8vw;
+		margin-top:-4.2vw;
 	}
 	.menu_nav{
-		width:100%;
+		width:100vw;
 	}
 	.menu_link {
 	  text-decoration: none;
@@ -33,29 +39,29 @@
 	}
 	.menu_li {
 		color: #fff;
-		background: darkorange;
+		background: #988588;
 		display: block;
 		float: left;
 		padding: 1.4vw;
-		font-size:1.3vw;
+		font-size:1.2vw;
 		position: relative;
 		text-decoration: none;
 		transition-duration: 0.5s;
-		width:8vw;
+		width:13vw;
 		margin-top:2vw;
 		text-align:center;
-		font-size:1.2vw;
+		
 		font-family: 'Open Sans', sans-serif;
 	}
 	.menu_li a {
 	  color: #fff;
 	}
 	.menu_li:hover {
-		background: red;
+		background: #4e705d;
 		cursor: pointer;
 	}
 	.menu_ul li ul {
-		background: orange;
+		background: #4e705d;
 		visibility: hidden;
 		opacity: 0;
 		width: 10.8vw;
@@ -78,35 +84,23 @@
 		width: 8vw;
 		margin-top: 0vw;
 	}
-	.social{
-		position: relative;
-		z-index:5;
-		width:10%;
-		margin-left: 85%;
-		height:8vw;
-		margin-top:-8vw;
-	}
-	.social_logo_div{
-		width:4vw;
-		margin-top:2.1vw;
-	}
 	.social_logo{
-		width:4vw;
+		width:3vw;
 	}
 	.galleryBlock{
 		position:relative;
-		margin-top:1vw;
+		margin-top:4vw;
 		width:97%;
 		margin-left:2vw;
 		overflow-x:hidden;
 	}
-	.gallery_item{
+	.gallery_grid{
+		margin-right:4.1vw;
+	}
+	.bottom{
 		position:relative;
-		margin-top:3vw;
-		width:97%;
-		margin-left:6vw;
-		overflow-x:hidden;
-		overflow-y:visible;
-		font-size:2vw;
-		font-family: 'Open Sans', sans-serif;
+		width: 100%;
+		height:5vw;
+		background-color:#4e705d;
+		margin-top:2vw;
 	}
