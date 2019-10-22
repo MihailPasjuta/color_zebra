@@ -6,17 +6,17 @@
 		z-index:5;
 		top:2vw;
 		width:55vw;
-		left: 27vw;
+		left: 28.5vw;
 		height:8vw;
 	}
 	.head_menu_block_img{
 		position: relative;
 		z-index:5;
 		background-image: url(\images/zebra_head.png);
-		background-size: cover;
-		width:80vw;
-		height:26vw;
-		left:10vw;
+		background-size: 75.15vw 24vw;
+		width:75.15vw;
+		height:24vw;
+		left:11.5vw;
 		
 	}
 	.menu{
@@ -48,7 +48,7 @@
 		position: relative;
 		text-decoration: none;
 		transition-duration: 0.5s;
-		width:7.2vw;
+		width:6.6vw;
 		margin-top:2vw;
 		text-align:center;
 		
@@ -89,14 +89,11 @@
 		width:3vw;
 	}
 	.galleryBlock{
-		margin-top:4vw;
-	
-	}
-	
-	.bottom{
 		position:relative;
-		width: 100%;
-		height:5vw;
-		background-color:#4e705d;
-		margin-top:2vw;
+		margin-top:4vw;
+		display:block;
+	}
+	.gallery_grid{
+		position:relative;
+		margin-top:1vw;
 	}

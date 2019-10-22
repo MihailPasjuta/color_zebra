@@ -235,6 +235,7 @@ export default function PhotoGallery() {
 
   return (
 	<div className="formPhoto">
+		
 			<div className="galleryBlock">
 				<div className={classes.root}>
 				  <AppBar position="static" color="default">
@@ -253,15 +254,16 @@ export default function PhotoGallery() {
 					</Tabs>
 				  </AppBar>
 				  <TabPanel value={value} index={0}>
-					<Gallery images={IMAGES}/>
+					<div className="gallery_grid"><Gallery images={IMAGES}/></div>
 				  </TabPanel>
 				  <TabPanel value={value} index={1}>
-					<Gallery images={IMAGES1}/>
+					<div className="gallery_grid"><Gallery images={IMAGES1}/></div>
 				  </TabPanel>
 				  <TabPanel value={value} index={2}>
-					<Gallery images={IMAGES}/>
+					<div className="gallery_grid"><Gallery images={IMAGES}/></div>
 				  </TabPanel>
 				</div>
+				
 			</div>
 	</div>
   );
