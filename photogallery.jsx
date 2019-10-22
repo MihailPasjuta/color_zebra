@@ -186,8 +186,6 @@ const IMAGES =
 		}
 	
 	]
-	
-
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -209,7 +207,7 @@ function TabPanel(props) {
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired
+  value: PropTypes.any.isRequired,
 };
 
 function a11yProps(index) {
@@ -219,18 +217,17 @@ function a11yProps(index) {
   };
 }
 
-
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    width: '100vw',
+    width: '100%',
     backgroundColor: theme.palette.background.paper,
   },
 }));
 
 export default function PhotoGallery() {
-	const classes = useStyles();
-	const [value, setValue] = React.useState(0);
+  const classes = useStyles();
+  const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -238,35 +235,34 @@ export default function PhotoGallery() {
 
   return (
 	<div className="formPhoto">
-				<div className="galleryBlock">
-					<div className={classes.root}>
-					  <AppBar position="static" color="default">
-						<Tabs
-						  value={value}
-						  onChange={handleChange}
-						  indicatorColor="primary"
-						  textColor="primary"
-						  variant="scrollable"
-						  scrollButtons="auto"
-						  aria-label="scrollable auto tabs example"
-						>
-						  <Tab label="Item One" {...a11yProps(0)} />
-						  <Tab label="Item Two" {...a11yProps(1)} />
-						  <Tab label="Item Three" {...a11yProps(2)} />
-						</Tabs>
-					  </AppBar>
-					  <TabPanel value={value} index={0}>
-						<div className="gallery_grid"><Gallery images={IMAGES}/></div>
-					  </TabPanel>
-					  <TabPanel value={value} index={1}>
-						<div className="gallery_grid"><Gallery images={IMAGES1}/></div>
-					  </TabPanel>
-					  <TabPanel value={value} index={2}>
-						<div className="gallery_grid"><Gallery images={IMAGES}/></div>
-					  </TabPanel>
-					</div>
-				</div>	
-				<div className="bottom"></div>
+			<div className="galleryBlock">
+				<div className={classes.root}>
+				  <AppBar position="static" color="default">
+					<Tabs
+					  value={value}
+					  onChange={handleChange}
+					  indicatorColor="primary"
+					  textColor="primary"
+					  variant="scrollable"
+					  scrollButtons="auto"
+					  aria-label="scrollable auto tabs example"
+					>
+					  <Tab label="Item One" {...a11yProps(0)} />
+					  <Tab label="Item Two" {...a11yProps(1)} />
+					  <Tab label="Item Three" {...a11yProps(2)} />
+					</Tabs>
+				  </AppBar>
+				  <TabPanel value={value} index={0}>
+					<Gallery images={IMAGES}/>
+				  </TabPanel>
+				  <TabPanel value={value} index={1}>
+					<Gallery images={IMAGES1}/>
+				  </TabPanel>
+				  <TabPanel value={value} index={2}>
+					<Gallery images={IMAGES}/>
+				  </TabPanel>
+				</div>
+			</div>
 	</div>
   );
 }

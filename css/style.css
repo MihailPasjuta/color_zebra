@@ -18,18 +18,31 @@
 		position: fixed;
 		z-index:5;
 		top:2vw;
-		width:79vw;
-		left: 16vw;
+		width:95vw;
+		left: 3.5vw;
 		height:8vw;
 	}
 	.logos{
 		height:100%;
 	}
+	.social_block{
+		position: relative;
+		z-index:6;
+		width:13vw;
+		left: 83vw;
+		height:4vw;
+	}
+	.social_logo{	
+		height:3vw;
+		display: inline-block;
+		vertical-align:top;
+		margin-top:-5.5vw;
+	}
 	.menu{
 		position: relative;
 		z-index:5;
-		width:75%;
-		left: 12%;
+		width:75vw;
+		left: 10vw;
 		height:8vw;
 		margin-top:-8vw;
 	}
@@ -49,7 +62,9 @@
 		background: darkorange;
 		display: block;
 		float: left;
-		padding: 1.4vw;
+		padding: 0.5vw;
+		padding-top:1.2vw;
+		padding-bottom:1.2vw;
 		font-size:1.3vw;
 		position: relative;
 		text-decoration: none;
@@ -69,10 +84,10 @@
 		background: orange;
 		visibility: hidden;
 		opacity: 0;
-		width: 10.8vw;
+		width: 6vw;
 		position: absolute;
 		transition: all 0.5s ease;
-		margin-top: 1.4vw;
+		margin-top: 1.2vw;
 		left: 0;
 		display: none;
 	}
@@ -82,24 +97,9 @@
 		opacity: 1;
 		display: block;
 	}
-
 	.menu_ul li ul li {
 		clear: both;
-		width: 8vw;
+		width: 8.1vw;
 		margin-top: 0vw;
-	}
-	.social{
-		position: relative;
-		z-index:5;
-		width:10%;
-		margin-left: 85%;
-		height:8vw;
-		margin-top:-8vw;
-	}
-	.social_logo_div{
-		width:4vw;
-		margin-top:2.1vw;
-	}
-	.social_logo{
-		width:4vw;
+		left:-3vw;
 	}

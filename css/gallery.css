@@ -5,24 +5,25 @@
 		position: relative;
 		z-index:5;
 		top:2vw;
-		width:79vw;
-		left: 16vw;
+		width:55vw;
+		left: 27vw;
 		height:8vw;
 	}
 	.head_menu_block_img{
 		position: relative;
 		z-index:5;
 		background-image: url(\images/zebra_head.png);
-		background-size: 79vw 26vw;
-		width:80%;
+		background-size: cover;
+		width:80vw;
 		height:26vw;
-		left:11vw;
+		left:10vw;
+		
 	}
 	.menu{
 		position: relative;
 		z-index:5;
-		width:150vw;
-		left: -5vw;
+		width:40vw;
+		left: -17vw;
 		height:8vw;
 		margin-top:-4.2vw;
 	}
@@ -43,11 +44,11 @@
 		display: block;
 		float: left;
 		padding: 1.4vw;
-		font-size:1.2vw;
+		font-size:1.3vw;
 		position: relative;
 		text-decoration: none;
 		transition-duration: 0.5s;
-		width:13vw;
+		width:7.2vw;
 		margin-top:2vw;
 		text-align:center;
 		
@@ -64,7 +65,7 @@
 		background: #4e705d;
 		visibility: hidden;
 		opacity: 0;
-		width: 10.8vw;
+		width: 7vw;
 		position: absolute;
 		transition: all 0.5s ease;
 		margin-top: 1.4vw;
@@ -81,22 +82,17 @@
 
 	.menu_ul li ul li {
 		clear: both;
-		width: 8vw;
+		width: 7.07vw;
 		margin-top: 0vw;
 	}
 	.social_logo{
 		width:3vw;
 	}
 	.galleryBlock{
-		position:relative;
 		margin-top:4vw;
-		width:97%;
-		margin-left:2vw;
-		overflow-x:hidden;
+	
 	}
-	.gallery_grid{
-		margin-right:4.1vw;
-	}
+	
 	.bottom{
 		position:relative;
 		width: 100%;
