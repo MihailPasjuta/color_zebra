@@ -52,7 +52,7 @@
 				</div>
 				<a href="#photo" class="active">Фото</a>
 				<a href="#contact">Контакти</a>
-				<a href="javascript:void(0);" style="font-size:30px;" class="icon">&#9776;</a>
+				<a href="javascript:void(0);" style="font-size:30px;" class="icon" onClick="myFunction()">&#9776;</a>
 			</div>
 		</div>
 	</div>
@@ -60,19 +60,15 @@
 	<!--<div id="root"/>
 	<script src="index.jsx"></script>-->
 	<script type="text/javascript">
-      
+       export default function myFunction() {
 			var x = document.getElementById("myTopnav");
-			x.addEventListener("click", btnClick);
-			function btnClick() {
-    if (x.className === "topnav") {
+			if (x.className === "topnav") {
 				x.className += " responsive";
 			} 
 			else {
 				x.className = "topnav";
 			}
-  }
-			
-		
+		}
 	</script>
 </body>
 </html>
