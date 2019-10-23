@@ -237,6 +237,7 @@ export default function PhotoGallery() {
 	<div className="formPhoto">
 		
 			<div className="galleryBlock">
+			<div className="gallery_name">Наша фотогалерея</div>
 				<div className={classes.root}>
 				  <AppBar position="static" color="default">
 					<Tabs

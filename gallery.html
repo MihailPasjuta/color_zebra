@@ -15,40 +15,58 @@
 	<div class="head_menu_block" id="head_menu_block">
 		
 		<div class="menu">
-			<nav class="menu_nav" role="navigation">
-			  <ul class="menu_ul">
-				<li class="menu_li"><a class="menu_link" href="./index.html">Про нас</a></li>
-				<li class="menu_li"><a class="menu_link" href="#">Педагоги</a></li>
-				<li class="menu_li"><a class="menu_link" href="#">Новини</a></li>
-				<li class="menu_li"><a class="menu_link" href="#">Навчання</a>
-					<ul class="submenu">
-						<li class="menu_li"><a href=#>Sudmenu 2</a></li>
-						<li class="menu_li"><a href=#>Sudmenu 2</a></li>
-						<li class="menu_li"><a href=#>Sudmenu 2</a></li>
-					</ul>
-				</li>
-				<li class="menu_li"><a class="menu_link" href="#">Розваги</a>
-					<ul class="submenu">
-						<li class="menu_li"><a href=#>Sudmenu 2</a></li>
-						<li class="menu_li"><a href=#>Sudmenu 2</a></li>
-						<li class="menu_li"><a href=#>Sudmenu 2</a></li>
-					</ul>
-				</li>
-				<li class="menu_li"><a class="menu_link" href="#">Екскурсії</a>
-					<ul class="submenu">
-						<li class="menu_li"><a href=#>Sudmenu 2</a></li>
-						<li class="menu_li"><a href=#>Sudmenu 2</a></li>
-						<li class="menu_li"><a href=#>Sudmenu 2</a></li>
-					</ul>
-				</li>
-				<li class="menu_li"><a class="menu_link" href="#">Фото</a></li>
-				<li class="menu_li"><a class="menu_link" href="#">Контакти</a></li>
-			  </ul>
-			</nav>
+			<div class="topnav" id="myTopnav">
+				<a href="./index.html">Про нас</a>
+				<a href="#news">Педагоги</a>
+				<a href="#contact">Новини</a>
+				<div class="dropdown">
+					<button class="dropbtn">Навчання
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div> 
+				<div class="dropdown">
+					<button class="dropbtn">Розваги
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div> 
+				<div class="dropdown">
+					<button class="dropbtn">Екскурсії
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				<a href="#photo" class="active">Фото</a>
+				<a href="#contact">Контакти</a>
+				<a href="javascript:void(0);" style="font-size:30px;" class="icon" 		 onclick="myFunction()">&#9776;</a>
+			</div>
 		</div>
 	</div>
 	<div id="root"/>
 	<script src="index.jsx"></script>
-
+	<script defer>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} 
+			else {
+				x.className = "topnav";
+			}
+		}
+	</script>
 </body>
 </html>
