@@ -31,11 +31,15 @@
 		width:3vw;
 	}
 	.gallery_name{
-		display:none;
+		display:block;
+		margin-bottom:20px;
+		font-family: 'Open Sans', sans-serif;
+		margin-left:20px;
+		font-size:20px;
 	}
 	.galleryBlock{
 		position:relative;
-		margin-top:4vw;
+		margin-top:0vw;
 		display:block;
 	}
 	.gallery_grid{
@@ -58,13 +62,11 @@
 		left: 0vw;
 		height:8vw;
 		width:100%;
-		margin-top:-1.9vw;
+		margin-top:-2vw;
 	}
 	.head_menu_block_img{
 		display:none;
 		text-align:center;
-
-		
 	}
 	.gallery_name{
 		display:block;
