@@ -25,7 +25,7 @@
 		width:75.2vw;
 		left: -17vw;
 		height:8vw;
-		margin-top:-4.2vw;
+		margin-top:-2.2vw;
 	}
 	.social_logo{
 		width:3vw;
@@ -58,6 +58,7 @@
 		left: 0vw;
 		height:8vw;
 		width:100%;
+		margin-top:-1.9vw;
 	}
 	.head_menu_block_img{
 		display:none;
