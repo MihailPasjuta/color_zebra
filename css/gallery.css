@@ -22,8 +22,8 @@
 	.menu{
 		position: relative;
 		z-index:5;
-		width:76.2vw;
-		left: -18vw;
+		width:75.2vw;
+		left: -17vw;
 		height:8vw;
 		margin-top:-2.2vw;
 	}
@@ -48,7 +48,7 @@
 	}
 	.nav_style{
 		background-color: #e3f2fd;
-		font-size:1.6vw;
+		font-size:1.58vw;
 	}
 	.dropdown:hover > .dropdown-menu {
     display: block;
@@ -57,7 +57,7 @@
 
 		pointer-events: none;
 	}
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 991px) {
 	
 .head_menu_block{
 		position: relative;

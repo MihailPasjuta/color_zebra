@@ -29,15 +29,17 @@
 		position: relative;
 		z-index:6;
 		width:13vw;
-		left: 83vw;
+		left: 82vw;
 		height:4vw;
+		top:-7vw;
 	}
 	.social_logo{	
 		height:3vw;
 		display: inline-block;
 		vertical-align:top;
-		margin-top:-7vw;
+		margin-right:0.2vw;
 	}
+	
 	.menu{
 		position: relative;
 		z-index:5;
@@ -48,7 +50,7 @@
 	}
 	.nav_style{
 		background-color: orange;
-		font-size:1.4vw;
+		font-size:1.29vw;
 		margin-left:1vw;
 	}
 	.nav_items{
@@ -61,3 +63,43 @@
 
 		pointer-events: none;
 	}
+@media screen and (max-width: 991px) {
+	.head_menu_block{
+		position: fixed;
+		z-index:5;
+		width:95vw;
+	}
+	.logos{
+		margin-top:40px;
+		height:30vw;
+	}
+	.social_block{
+		position: relative;
+		z-index:6;
+		width:23vw;
+		left: 75vw;
+		height:4vw;
+		margin-top:-17vw;
+		
+	}
+	.social_logo{	
+		height:50px;
+		display: inline-block;
+		vertical-align:top;
+		margin-top:0vw;
+		padding:1vw;
+	}
+  .menu{
+		position: fixed;
+		z-index:5;
+		left: -1vw;
+		height:8vw;
+		width:102%;
+		top:6.5vw;
+	}
+	.nav_style{
+		background-color: orange;
+		font-size:17px;
+	}
+
+}
