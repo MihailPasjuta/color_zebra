@@ -48,7 +48,7 @@
 	}
 	.nav_style{
 		background-color: #e3f2fd;
-		font-size:1.58vw;
+		font-size:1.29vw;
 	}
 	.dropdown:hover > .dropdown-menu {
     display: block;
@@ -94,6 +94,13 @@
 	.nav_style{
 		background-color: #e3f2fd;
 		font-size:17px;
+	}
+	.dropdown:hover > .dropdown-menu {
+    display: block;
+	}
+	.dropdown > .dropdown-toggle:active {
+
+		pointer-events: none;
 	}
 
 }
