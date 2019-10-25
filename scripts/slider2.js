@@ -1,4 +1,4 @@
-$('.fade').slick({
+$('.fades').slick({
   dots: true,
   infinite: true,
   speed: 500,

@@ -36,70 +36,28 @@
 		height:3vw;
 		display: inline-block;
 		vertical-align:top;
-		margin-top:-5.5vw;
+		margin-top:-7vw;
 	}
 	.menu{
 		position: relative;
 		z-index:5;
-		width:75vw;
+		width:70vw;
 		left: 10vw;
 		height:8vw;
-		margin-top:-8vw;
+		margin-top:-6.5vw;
 	}
-	.menu_nav{
-		width:100%;
+	.nav_style{
+		background-color: orange;
+		font-size:1.4vw;
+		margin-left:1vw;
 	}
-	.menu_link {
-	  text-decoration: none;
+	.nav_items{
+		color:white;
 	}
-	.menu_ul{
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
+	.dropdown:hover > .dropdown-menu {
+    display: block;
 	}
-	.menu_li {
-		color: #fff;
-		background: darkorange;
-		display: block;
-		float: left;
-		padding: 0.5vw;
-		padding-top:1.2vw;
-		padding-bottom:1.2vw;
-		font-size:1.3vw;
-		position: relative;
-		text-decoration: none;
-		transition-duration: 0.5s;
-		width:8vw;
-		margin-top:2vw;
-		text-align:center;
-	}
-	.menu_li a {
-	  color: #fff;
-	}
-	.menu_li:hover {
-		background: red;
-		cursor: pointer;
-	}
-	.menu_ul li ul {
-		background: orange;
-		visibility: hidden;
-		opacity: 0;
-		width: 6vw;
-		position: absolute;
-		transition: all 0.5s ease;
-		margin-top: 1.2vw;
-		left: 0;
-		display: none;
-	}
-	.menu_ul li:hover > ul,
-	.menu_ul li ul:hover {
-		visibility: visible;
-		opacity: 1;
-		display: block;
-	}
-	.menu_ul li ul li {
-		clear: both;
-		width: 8.1vw;
-		margin-top: 0vw;
-		left:-3vw;
+	.dropdown > .dropdown-toggle:active {
+
+		pointer-events: none;
 	}
