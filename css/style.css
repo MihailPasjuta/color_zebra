@@ -108,7 +108,7 @@
 	}
 	.logos_mobile{
 		display:block;
-		margin-top:70px;
+		margin-top:60px;
 		margin-left:2vw;
 		height:26vw;
 		position:absolute;
@@ -154,7 +154,7 @@
 		position:absolute;
 		z-index:4;
 		left:32vw;
-		margin-top:147px;
+		margin-top:130px;
 	}
 	.logos_text{
 		height:23vw;
