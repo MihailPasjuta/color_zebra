@@ -17,13 +17,14 @@
 	.head_menu_block{
 		position: fixed;
 		z-index:5;
-		top:2vw;
+		top:0vw;
 		width:95vw;
 		left: 3.5vw;
 		height:8vw;
 	}
 	.logos{
 		height:100%;
+		margin-top:0.1vw;
 	}
 	.social_block{
 		position: relative;
@@ -46,7 +47,7 @@
 		width:70vw;
 		left: 10vw;
 		height:8vw;
-		margin-top:-6.5vw;
+		margin-top:-6.6vw;
 	}
 	.nav_style{
 		background-color: orange;
@@ -63,11 +64,26 @@
 
 		pointer-events: none;
 	}
+	.head_text{
+		position:absolute;
+		z-index:4;
+		left:32vw;
+		margin-top:9vw;
+	}
+	.logos_text{
+		height:13vw;
+	}
+	.social_block_mobile{
+		display:none;
+	}
+	.logos_mobile{
+		display:none;
+	}
 @media screen and (max-width: 991px) {
 	.head_menu_block{
 		position: fixed;
 		z-index:5;
-		width:95vw;
+		width:100%;
 	}
 	.head_slider{
 		position:relative;
@@ -81,13 +97,22 @@
 	.head_1{
 		width:100%;
 		height:90%;
-		margin-top:5vw;
+		margin-top:0vw;
 		overflow: hidden;
 		object-fit: cover;
 	}
 	.logos{
 		margin-top:40px;
 		height:30vw;
+		display:none;
+	}
+	.logos_mobile{
+		display:block;
+		margin-top:70px;
+		margin-left:2vw;
+		height:26vw;
+		position:absolute;
+		z-index:4;
 	}
 	.social_block{
 		position: relative;
@@ -95,8 +120,16 @@
 		width:24vw;
 		left: 72vw;
 		height:4vw;
-		margin-top:-17vw;
+		margin-top:0vw;
+		display:none;
 		
+	}
+	.social_block_mobile{
+		position:absolute;
+		z-index:4;
+		display:block;
+		right:20px;
+		margin-top:60px;
 	}
 	.social_logo{	
 		height:50px;
@@ -111,11 +144,19 @@
 		left: -1vw;
 		height:8vw;
 		width:102%;
-		top:6.5vw;
+		top:6.6vw;
 	}
 	.nav_style{
 		background-color: orange;
 		font-size:17px;
 	}
-
+	.head_text{
+		position:absolute;
+		z-index:4;
+		left:32vw;
+		margin-top:147px;
+	}
+	.logos_text{
+		height:23vw;
+	}
 }

@@ -22,7 +22,7 @@
 	.menu{
 		position: relative;
 		z-index:5;
-		width:75.2vw;
+		width:77.2vw;
 		left: -17vw;
 		height:8vw;
 		margin-top:-2.2vw;
@@ -48,7 +48,8 @@
 	}
 	.nav_style{
 		background-color: #e3f2fd;
-		font-size:1.29vw;
+		font-size:1.24vw;
+		margin-right:2vw;
 	}
 	.dropdown:hover > .dropdown-menu {
     display: block;
@@ -72,7 +73,7 @@
 		z-index:5;
 		left: 0vw;
 		height:8vw;
-		width:100%;
+		width:102%;
 		margin-top:-2vw;
 	}
 	.head_menu_block_img{
